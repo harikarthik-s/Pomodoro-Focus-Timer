@@ -23,8 +23,8 @@ body {
 }
 
 .background .shape {
-    height: 200px;
-    width: 200px;
+    height: 125px;
+    width: 125px;
     position: absolute;
     border-radius: 50%;
 }
@@ -32,16 +32,50 @@ body {
 .shape:first-child {
     background: linear-gradient(#1845ad,
             #23a2f6);
-    left: -15px;
-    top: -70px;
+    right: 235px;
+    bottom: 20px;
 }
 
 .shape:last-child {
     background: linear-gradient(to right,
             #ff512f,
             #f09819);
-    right: -10px;
-    bottom: -60px;
+    right: 75px;
+    bottom: 20px;
+}
+
+@media only screen and (max-width: 1000px){
+    .shape:first-child {
+            background: linear-gradient(#1845ad,
+                    #23a2f6);
+            right: 235px;
+            bottom: 80px;
+        }
+    
+        .shape:last-child {
+            background: linear-gradient(to right,
+                    #ff512f,
+                    #f09819);
+            right: 75px;
+            bottom: 80px;
+        }
+}
+
+@media only screen and (max-width: 500px) {
+    .shape:first-child {
+        background: linear-gradient(#1845ad,
+                #23a2f6);
+        right: 235px;
+        bottom: 80px;
+    }
+
+    .shape:last-child {
+        background: linear-gradient(to right,
+                #ff512f,
+                #f09819);
+        right: 75px;
+        bottom: 90px;
+    }
 }
 
 .main{
@@ -153,6 +187,11 @@ body {
 #session-label {
      font-size: 14px;
      display: block;
+ }
+
+ .numbers{
+    padding-left: 7px;
+    padding-right: 7px;
  }
 
 
