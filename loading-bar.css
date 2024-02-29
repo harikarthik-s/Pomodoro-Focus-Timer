@@ -13,5 +13,5 @@
 
 .ldBar-label:after {
     content: "%";
-    display: inline
+    display: inline;
 }

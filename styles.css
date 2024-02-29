@@ -5,25 +5,58 @@
     box-sizing: border-box;
     margin: 0 auto;
     text-align: center;
-    color: black;
+    color: #ffffff;
 }
 
 body {
-    background: #101827;
+    background-color: #080710;
     overflow-x: hidden;
 }
 
+.background {
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+
+.background .shape {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.shape:first-child {
+    background: linear-gradient(#1845ad,
+            #23a2f6);
+    left: -15px;
+    top: -70px;
+}
+
+.shape:last-child {
+    background: linear-gradient(to right,
+            #ff512f,
+            #f09819);
+    right: -10px;
+    bottom: -60px;
+}
 
 .main{
     display: flex;
     flex-direction: column;
     width: 350px;
-    background: #ffffff;
-    border: none;
-    box-shadow: 5px 5px 20px #1f2f4d;
-    border-radius: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.13);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    border-radius: 10px;
     margin: 8% auto;
+
 }
+
 
 .title{
     width: 320px;
@@ -61,7 +94,7 @@ body {
      font-family: 'Geo',
         sans-serif;
      text-shadow: 1px 2px 1px rgba(1, 1, 1, 1);
-     color: #1f2f4d;
+     color: #ffffff;
      margin: 1.5rem 0 1.5rem 0;
  }
 
@@ -116,10 +149,11 @@ body {
     cursor: pointer;
 }
 
- #break-label,
- #session-label {
+#break-label,
+#session-label {
      font-size: 14px;
      display: block;
  }
+
 
  
