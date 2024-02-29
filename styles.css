@@ -45,7 +45,7 @@ body {
 }
 
  #progress-bar {
-     font-family: 'Geo', sans-serif;
+     font-family: "Poppins", sans-serif;
      font-size: 18px;
      padding: 20px;
  }
@@ -57,10 +57,65 @@ body {
 
  #time-left {
      height: 90px;
-     font-size: 110px;
-     font-family: 'Geo', sans-serif;
+     font-size: 90px;
+     font-family: "Poppins",
+        sans-serif;
      text-shadow: 1px 2px 1px rgba(1, 1, 1, 1);
+     margin-bottom: 1.5rem;
  }
 
+#start_pause_reset {
+    height: 70px;
+    padding: 10px;
+    font-size: 32px;
+    margin-bottom: 1.5rem;
+}
 
+#session-break {
+    display: flex;
+    flex-direction: row;
+    width: 320px;
+    height: 100px;
+    font-family: "Poppins", sans-serif;
 
+    /* make elements unselectable */
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+#session,
+#break {
+    width: 50%;
+    font-size: 15px;
+    height: 90px;
+    padding: 15px;
+}
+
+#start_stop {
+    padding: 10px;
+}
+
+#reset {
+    padding: 10px;
+}
+
+.pause-reset {
+    display: inline-block;
+    width: 40px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.sign {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+ #break-label,
+ #session-label {
+     font-size: 14px;
+     display: block;
+ }

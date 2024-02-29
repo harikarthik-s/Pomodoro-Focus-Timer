@@ -6,6 +6,7 @@
     <title>Pomodoro Timer</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel='stylesheet' href='./loading-bar.css'>
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 </head>
 <body>
     <div class="main">
@@ -18,8 +19,27 @@
                 <div id="ldBar" data-stroke="data:ldbar/res,gradient(0,1,#9df,#9fd,#df9,#fd9)" data-value="00"></div>
             </div>
             <div id="time-left">25:00</div>
+            <div id="start_pause_reset">
+                <span id="start_stop" class="pause-reset pause ion-play"></span>
+                <span id="reset" class="pause-reset reset ion-loop"></span>
+            </div>
+            <div id="session-break">
+                <div id="break">
+                    <span id="break-label">BREAK LENGTH</span>
+                    <span class="sign decrease ion-minus-circled" id="break-decrement"></span>
+                    <span class="numbers" id="break-length">5</span>
+                    <span class="sign increase ion-plus-circled" id="break-increment"></span>
+                </div>
+                <div id="session">
+                    <span id="session-label">SESSION LENGTH</span>
+                    <span class="sign decrease ion-minus-circled" id="session-decrement"></span>
+                    <span class="numbers" id="session-length">25</span>
+                    <span class="sign increase ion-plus-circled" id="session-increment"></span>
+                </div>
+            </div>
         </div>
     </div>
+    <script src="./loading-bar.min.js"></script>
     <script src="./script.js"></script>
 </body>
 </html>
