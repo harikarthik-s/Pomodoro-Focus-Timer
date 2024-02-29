@@ -9,7 +9,7 @@
 }
 
 body {
-    background: #e3f174;
+    background: #101827;
     overflow-x: hidden;
 }
 
@@ -17,12 +17,12 @@ body {
 .main{
     display: flex;
     flex-direction: column;
-    width: 320px;
+    width: 350px;
     background: #ffffff;
     border: none;
-    box-shadow: 5px 5px 20px rgba(128, 128, 128, 0.441);
+    box-shadow: 5px 5px 20px #1f2f4d;
     border-radius: 1.5rem;
-    margin: 9% auto;
+    margin: 8% auto;
 }
 
 .title{
@@ -57,11 +57,12 @@ body {
 
  #time-left {
      height: 90px;
-     font-size: 90px;
-     font-family: "Poppins",
+     font-size: 120px;
+     font-family: 'Geo',
         sans-serif;
      text-shadow: 1px 2px 1px rgba(1, 1, 1, 1);
-     margin-bottom: 1.5rem;
+     color: #1f2f4d;
+     margin: 1.5rem 0 1.5rem 0;
  }
 
 #start_pause_reset {
@@ -77,6 +78,7 @@ body {
     width: 320px;
     height: 100px;
     font-family: "Poppins", sans-serif;
+    margin-bottom: 1.5rem;
 
     /* make elements unselectable */
     -moz-user-select: -moz-none;
@@ -119,3 +121,5 @@ body {
      font-size: 14px;
      display: block;
  }
+
+ 
