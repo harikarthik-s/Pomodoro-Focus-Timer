@@ -145,7 +145,7 @@ body {
     width: 320px;
     height: 100px;
     font-family: "Poppins", sans-serif;
-    margin-bottom: 1.5rem;
+    margin-bottom: 3.5rem;
 
     /* make elements unselectable */
     -moz-user-select: -moz-none;
